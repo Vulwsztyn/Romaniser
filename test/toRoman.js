@@ -40,83 +40,70 @@ describe('Errors', function() {
 });
 
 describe('SingleSign', function() {
-    describe('1', function() {
-        it('should return "I"', function() {
+
+        it('1', function() {
             assert.strictEqual(toRoman(1), "I");
         });
-    });
-    describe('5', function() {
-        it('should return "V"', function() {
+
+        it('5', function() {
             assert.strictEqual(toRoman(5), "V");
         });
-    });
-    describe('10', function() {
-        it('should return "X"', function() {
+
+        it('10', function() {
             assert.strictEqual(toRoman(10), "X");
         });
-    });
-    describe('50', function() {
-        it('should return "L"', function() {
+
+        it('50', function() {
             assert.strictEqual(toRoman(50), "L");
         });
-    });
-    describe('100', function() {
-        it('should return "C"', function() {
+
+        it('100', function() {
             assert.strictEqual(toRoman(100), "C");
         });
-    });
-    describe('500', function() {
-        it('should return "D"', function() {
+
+        it('500', function() {
             assert.strictEqual(toRoman(500), "D");
         });
-    });
-    describe('1000', function() {
-        it('should return "M"', function() {
+
+        it('1000', function() {
             assert.strictEqual(toRoman(1000), "M");
         });
-    });
+
 });
 
 describe('Subtracted', function() {
-    describe('449', function() {
-        it('should return "CDXLIX"', function() {
+
+        it('449', function() {
             assert.strictEqual(toRoman(449), "CDXLIX");
         });
-    });
-    describe('994', function() {
-        it('should return "CMXCIV"', function() {
+
+        it('994', function() {
             assert.strictEqual(toRoman(994), "CMXCIV");
         });
-    });
+
 });
 
 describe('Thrice the same', function() {
-    describe('3383', function() {
-        it('should return "MMMCCCLXXXIII"', function() {
+
+        it('3383', function() {
             assert.strictEqual(toRoman(3383), "MMMCCCLXXXIII");
         });
-    });
-    describe('838', function() {
-        it('should return "DCCCXXXVIII"', function() {
+
+        it('838', function() {
             assert.strictEqual(toRoman(838), "DCCCXXXVIII");
         });
-    });
+
 });
 
 describe('A few others', function() {
-    describe('3999', function() {
-        it('should return "MMMCCCLXXXIII"', function() {
+
+        it('3999', function() {
             assert.strictEqual(toRoman(3999), "MMMCMXCIX");
         });
-    });
-    describe('1918', function() {
-        it('should return "DCCCXXXVIII"', function() {
+        it('1918', function() {
             assert.strictEqual(toRoman(1918), "MCMXVIII");
         });
-    });
-    describe('2674', function() {
-        it('should return "DCCCXXXVIII"', function() {
+        it('s2674', function() {
             assert.strictEqual(toRoman(2674), "MMDCLXXIV");
         });
-    });
 });
